@@ -1,19 +1,26 @@
-body{
-    overflow-x: hidden;
-    width: fit-content;
-}
 .bg-danger, .btn-danger{
-    background-color: #dc3545;
+    background-color: #dc3545 !important;
 }
 .text-danger{
-    color: #dc3545;
+    color: #e7355b !important;
 }
+span{
+    color: #e7355b !important;
+}
+/* .bkg{
+    background: linear-gradient(180deg,rgba(255,244,240,0),#fff4f0 17.19%,#fff4f0 84.37%,rgba(255,244,240,0))!important;
+} */
 .navigation{
     position: fixed;
     top: 0;
     box-sizing: border-box;
     background-color: white;
     z-index: 100;
+    height: 10vh !important;
+    font-size: small;
+}
+.home{
+    padding-top: 150px !important;
 }
 a{
     text-decoration: none;
@@ -27,71 +34,32 @@ span{
     border-radius: 50%;
     background-color: #dc3545;
 }
-.not-bold{
-    font-weight: normal !important;
-}
 .top-enroll + .enroll{
     padding: 5px 10px !important;
-}
-.enroll{
-    border-radius: 0 25px 25px 0;
-    transform: translateX(-12px);
-    font-size: 18px !important;
-}
-
-.home{
-    padding-top: 200px !important;
-}
-.home-enroll{
-    border-radius: 25px;
-    padding: 10px 30px;
-}
-.text-bold{
-    font-size: 48px !important;
-    font-weight: 500 !important;
-}
-#about-us{
-    font-size: 25px;
-    font-weight: bold;
-    align-items: center;
-}
-.leftie{
-    font-size: 24px;
-}
-.start-up, .power-up{
-    align-self: center;
-}
-
-.whys > div{
-    border-radius: 25px;
-    /* width: 30.333%; */
-    position: relative;
-}
-.why-bkg, .stack-bkg{
-    background: linear-gradient(180deg,rgba(255,244,240,0),#fff4f0 17.19%,#fff4f0 84.37%,rgba(255,244,240,0))!important;
-}
-
-
-.c1{
-    display: flex !important;
-    float: right !important;
-    margin-right: -50px !important;
-    margin-top: -50px !important;
+    margin-left: -10%;
 }
 .full-remote{
     box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
     background-color: white;
     border-radius: 35px;
 }
+.full-remote h1, .full-remote h3{
+    font-weight: 700;
+}
 .full-remote:hover{
     transform: translateY(-10px);
 }
-
-
+.c1{
+    display: flex !important;
+    float: right !important;
+    margin-right: -80px !important;
+    margin-top: -80px !important;
+    transform: scale(.6);
+}
 .practices{
     display: flex !important;
     align-content: center !important;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 40px;
     margin-bottom: 10px;
 }
@@ -99,6 +67,14 @@ span{
     vertical-align: middle;
     align-self:  center !important;
     margin: 0;
+}
+.practice-enroll, .home-enroll, .tweet-btn{
+    border-radius: 25px;
+    padding: 10px 30px;
+}
+.tweet-btn{
+    border-radius: 25px;
+    padding: 5px 30px;
 }
 .ds5{
     transform: translateX(-50%);
@@ -110,27 +86,16 @@ span{
 .s7w{
     transform: translate(-40%, 40%);
 }
-
 .stack{
     background-color: white;
     border-radius: 35px;
     box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
-    height: 465px !important;
+    height: 295px !important;
 }
 .stack h4, .full-time h4, .part-time h4{
     font-size: 20px !important;
     font-weight: 700 !important;
 }
-.full-time h1, .part-time h1{
-    font-size: 35px !important;
-    font-weight: 700 !important;
-}
-.stack-enroll{
-    border-radius: 35px;
-    padding: 10px 32px;
-}
-
-
 .accordion-button:after{
     background-image: url('./images/plus-svgrepo-com\ \(1\).svg') !important;
 }
@@ -162,17 +127,6 @@ p.accordion-button:not(.collapsed){
 .nested-list{
     padding-left: 0 !important;
 }
-.ch1{
-    float: right;
-    transform: translateY(-100%);
-}
-.ch2{
-    float: right;
-    transform: translateY(-50%);
-}
-.get-started{
-    border-radius: 30px;
-}
 .flt-img{
     display: flex;
     justify-content: space-between;
@@ -186,9 +140,8 @@ p.accordion-button:not(.collapsed){
 .zindex-minus{
     z-index: 2;
 }
-.start-enroll{
+.get-started{
     border-radius: 30px;
-    padding: 10px 30px;
 }
 .bottom-img, .top-img{
     display: flex !important;
@@ -200,8 +153,12 @@ p.accordion-button:not(.collapsed){
     transform: translate(100%, 50%);
 }
 .bottom-img{
-    margin-top: -10%;
+    margin-top: -30%;
 }
-.what-to-gain{
-    margin: 0px 0px 0px 0px !important;
+.bottom-text{
+    margin-bottom: -10%;
+}
+.start-enroll{
+    border-radius: 30px;
+    padding: 10px 30px;
 }
